@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 251, 247);
+}
+
+#display {
+  width: 71%;
+  height: 95vh;
+  align-self: flex-end;
+}
+
+#sidebar {
+  width: 27%;
+  height: 95vh;
+  border-radius: 0px 30px 0px 0px;
+  align-self: flex-end;
+  background-color: #252525;
+  color: beige;
+  padding: 60px;
+}
+
+.side_project {
+  margin-top: 60px;
+}
+
+.side_project button {
+  padding: 15px 25px;
+  background-color: rgb(59, 58, 58);
+  color: rgb(173, 166, 166);
+  border-radius: 7px;
+  margin: 50px 0px;
+  font-size: 1.5rem;
+}
+
+.project button {
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: left;
+  margin: 5px 0px;
+}
+
+.project button:hover {
+  background-color: rgb(50, 49, 49);
+}
+
+.side_project h3,
+#home h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+#home p {
+  font-size: 1.8rem;
+  margin: 25px 0px;
+}
+
+#home button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #252525;
+  color: rgb(173, 166, 166);
+  border-radius: 7px;
+  font-size: 1.5rem;
+}
+
+.manage_project {
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px 20px 50px;
+  overflow: scroll;
+}
+
+#project_brief {
+  margin-top: 30px;
+  height: 35%;
+  /* background-color: rgb(203, 226, 218); */
+}
+
+#project_brief h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#handle_project {
+  display: flex;
+  justify-content: space-between;
+}
+
+#handle_project button {
+  font-size: 1.8rem;
+  margin-right: 100px;
+  color: rgb(217, 32, 32);
+}
+
+#end_date {
+  font-size: 1.7rem;
+  margin: 30px 0px;
+}
+
+.description {
+  font-size: 1.8rem;
+}
+
+.input_task {
+  margin: 30px 0px;
+}
+
+#tasks input {
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border-bottom: 3px solid rgb(122, 93, 72);
+  background-color: rgb(211, 211, 211);
+  padding: 7px 10px;
+  width: 35%;
+}
+
+#tasks h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#addTask {
+  border: 2px solid rgb(91, 51, 46);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 8px;
+  margin-left: 15px;
+}
+
+.task_list li {
+  padding: 30px;
+  margin: 30px 0px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(232, 230, 230);
+}
+
+.task_list li span {
+  font-size: 2rem;
+}
+.task_list li button {
+  font-size: 1.5rem;
+}
+
+hr {
+  height: 4px;
+  background-color: rgb(195, 194, 194);
+  margin: 20px 0px;
+}
+
+.create_project {
+  width: 85%;
+  height: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 1.8rem;
+  margin: 15px 0px 5px 0px;
+}
+.form > input {
+  background-color: rgb(232, 230, 230);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border-bottom: 3px solid rgb(122, 93, 72);
+
+  padding: 8px 12px;
+}
+.form textarea {
+  background-color: rgb(232, 230, 230);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  height: 150px;
+  border-bottom: 3px solid rgb(122, 93, 72);
+}
+
+.formbuttons {
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+.formbuttons input {
+  padding: 13px 30px;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.formbuttons :nth-child(2) {
+  background-color: #252525;
+  color: rgb(173, 166, 166);
+  margin-left: 10px;
+}

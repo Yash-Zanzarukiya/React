@@ -1,0 +1,10 @@
+{
+  "debug.console.fontFamily": "Operator Mono",
+  "scm.inputFontFamily": "Operator Mono",
+  "terminal.integrated.fontFamily": "Operator Mono",
+  "editor.fontFamily": "Operator Mono",
+  "editor.codeLensFontFamily": "Operator Mono",
+  "editor.inlineSuggest.fontFamily": "Operator Mono",
+  "notebook.output.fontFamily": "Operator Mono",
+  "chat.editor.fontFamily": "Operator Mono"
+}
