@@ -222,6 +222,10 @@ hr {
   font-weight: bold;
 }
 
+.formbuttons input:hover {
+  cursor: pointer;
+}
+
 .formbuttons :nth-child(2) {
   background-color: #252525;
   color: rgb(173, 166, 166);

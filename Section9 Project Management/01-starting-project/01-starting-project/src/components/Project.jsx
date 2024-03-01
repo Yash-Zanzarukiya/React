@@ -1,6 +1,6 @@
-import project_data from "../data";
+import project_data from "../data.js";
 
-export default function Project() {
+export default function Project({ displayProject }) {
   return (
     <section className="manage_project">
       <section id="project_brief">
@@ -19,22 +19,12 @@ export default function Project() {
           <button id="addTask">Add Task</button>
         </div>
         <ol className="task_list">
-          <li>
-            <span>Task 1</span>
-            <button>Clear</button>
-          </li>
-          <li>
-            <span>Task 1</span>
-            <button>Clear</button>
-          </li>
-          <li>
-            <span>Task 1</span>
-            <button>Clear</button>
-          </li>
-          <li>
-            <span>Task 1</span>
-            <button>Clear</button>
-          </li>
+          {project_data[displayProject].tasks.map((task) => (
+            <li>
+              <span>Task 1</span>
+              <button>Clear</button>
+            </li>
+          ))}
         </ol>
       </section>
     </section>

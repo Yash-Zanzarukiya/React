@@ -1,12 +1,12 @@
 import project_data from "../data";
 
-export default function Sidebar({openProject}) {
-  function handleClick() {
+export default function Sidebar({setDisplayPage}) {
+  function handleProjectClick() {
 
   }
 
   function handleAddProject() {
-    
+
   }
 
   return (
@@ -19,7 +19,7 @@ export default function Sidebar({openProject}) {
         <ol id="project_list">
           {project_data.map((project,index) => (
             <li className="project">
-              <button key={project.title} name={index} onClick={handleClick}>{project.title}</button>
+              <button key={project.title} name={index} onClick={handleProjectClick}>{project.title}</button>
             </li>
           ))}
         </ol>
