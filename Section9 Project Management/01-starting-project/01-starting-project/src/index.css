@@ -53,6 +53,10 @@
   margin: 5px 0px;
 }
 
+.project button.active {
+  background-color: rgb(50, 49, 49);
+}
+
 .project button:hover {
   background-color: rgb(50, 49, 49);
 }
@@ -99,7 +103,9 @@
 
 #project_brief {
   margin-top: 30px;
-  height: 35%;
+  height: 30%;
+  height: fit-content;
+  margin-bottom: 40px;
   /* background-color: rgb(203, 226, 218); */
 }
 
@@ -156,7 +162,7 @@
 }
 
 .task_list li {
-  padding: 30px;
+  padding: 25px;
   margin: 30px 0px;
   border-radius: 8px;
   display: flex;
@@ -169,6 +175,9 @@
 }
 .task_list li button {
   font-size: 1.5rem;
+}
+.task_list h1 {
+  font-size: 1.8rem;
 }
 
 hr {

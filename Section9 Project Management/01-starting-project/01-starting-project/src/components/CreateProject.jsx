@@ -11,7 +11,8 @@ export default function CreateProject({ setDisplayPage }) {
     const newProjectData = {
       title: title.current.value,
       description: description.current.value,
-      deadline: deadline.current.value,
+      deadline: new Date(deadline.current.value).toLocaleDateString("en-GB"),
+      tasks: [],
     };
     project_data.push(newProjectData);
     setDisplayPage(-2);
